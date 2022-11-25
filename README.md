@@ -5,10 +5,10 @@
 ### Day1: Python & Google Colaboratory基礎
 
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_00Introduction.ipynb)
-* [資料01: Google Colaboratoryについて](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day1_01GoogleColaboratory.ipynb)
-* [資料02: 変数と演算](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day1_02Variable.ipynb)
-* [資料03: 制御構文](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day1_03Control.ipynb)
-* [資料04: 関数とラムダ式](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day1_04Lambda.ipynb)
+* [資料01: Google Colaboratoryについて](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_01GoogleColaboratory.ipynb)
+* [資料02: リテラルと変数](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_02Variable.ipynb)
+* [資料03: 制御構文](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_03Control.ipynb)
+* [資料04: 関数とラムダ式](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_04Lambda.ipynb)
 
 ### Day2: 文字列とグラフィック
 

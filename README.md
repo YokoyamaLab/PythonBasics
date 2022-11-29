@@ -8,6 +8,7 @@
 * [資料01: Google Colaboratoryについて](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_01GoogleColaboratory.ipynb)
 * [資料02: リテラルと変数](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_02LiteralVariable.ipynb)
 * [資料03: データ構造](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_03DataStructure.ipynb)
+* [課題Q1: 複雑なデータ構造を作ってみよう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_q1DataStructure.ipynb)
 
 ### Day2: 制御構文と関数
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_00Introduction.ipynb)

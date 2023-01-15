@@ -2,7 +2,7 @@
 
 ## 講義資料
 
-### Day1: 講義環境(Google Colab)の確認とPtyhon最初歩
+### Day01: 講義環境(Google Colab)の確認とPython最初歩
 
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_00Introduction.ipynb)
 * [資料01: Google Colaboratoryについて](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_01GoogleColaboratory.ipynb)
@@ -10,13 +10,29 @@
 * [資料03: データ構造](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_03DataStructure.ipynb)
 * [課題Q1: 複雑なデータ構造を作ってみよう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_q1DataStructure.ipynb)
 
-### Day2: 演算子、制御構文と関数
+### Day02: 演算子、制御構文
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_00Introduction.ipynb)
 * [資料01: 演算子](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_01Operator.ipynb)
 * [資料01: 制御構文](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_02Control.ipynb)
-* [資料02: 関数とラムダ式](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_03Function.ipynb)
 
-### Day3: 文字列とグラフィック
+
+### Day03: 関数とクラス
+
+* [資料01: 関数とラムダ式](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_01Function.ipynb)
+* [資料02: クラスとオブジェクト指向](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_01Function.ipynb)
+
+
+### Day4: グラフィック
+
+### Day5: 閑話休題
+
+### Day6: 文字列処理とWeb
+
+### Day7: 数値処理とグラフ
+
+### Day8: 機械学習(NumPy)
+
+### Day9: 機械学習(scikit-learn)
 
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_00Introduction.ipynb)
 * [資料01: 文字列関数](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_01String.ipynb)

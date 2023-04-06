@@ -20,9 +20,9 @@
 
 * [資料01: 関数とラムダ式](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_01Function.ipynb)
 * [資料02: クラスとオブジェクト指向](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_02Class.ipynb)
+* [課題Q1: クラスの設計](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_q1Class.ipynb)
 
-
-### Day4: グラフィック
+### Day4: グラフィックとクラス(応用)
 
 ### Day5: 閑話休題
 

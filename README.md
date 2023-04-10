@@ -24,16 +24,21 @@
 * [資料01: 演算子](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_01Operator.ipynb)
 * [資料01: 制御構文](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_02Control.ipynb)
 
-
 ### Day03: 関数とクラス
 
+* [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_00Introduction.ipynb)
 * [資料01: 関数とラムダ式](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_01Function.ipynb)
 * [資料02: クラスとオブジェクト指向](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_02Class.ipynb)
 * [課題Q1: クラスの設計](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_q1Class.ipynb)
 
 ### Day4: グラフィックとクラス(応用)
 
-### Day5: 閑話休題
+* [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_00Introduction.ipynb)
+* [資料01: matplotlibで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_01Matplotlib.ipynb)
+* [資料02: Turtleで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_02Turtle.ipynb)
+* [資料03: 画像ファイルを描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_03ImageFile.ipynb)
+
+### Day5: 演習デー
 
 ### Day6: 文字列処理とWeb
 

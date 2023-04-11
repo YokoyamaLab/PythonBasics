@@ -37,10 +37,10 @@
 ### Day4: グラフィックとクラス(応用)
 
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_00Introduction.ipynb)
-* [資料01: matplotlibで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_01Matplotlib.ipynb)
-* [資料02: Turtleで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_02Turtle.ipynb)
-* [資料03: 画像ファイルを描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_03ImageFile.ipynb)
-
+* [資料01: Turtleで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_01Turtle.ipynb)
+* [資料02: PILで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_02Pil.ipynb)
+* [資料03: 画像ファイルを読みこみ表示する](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_03ImageFile.ipynb)
+* 
 ### Day5: 演習デー
 
 ### Day6: 文字列処理とWeb

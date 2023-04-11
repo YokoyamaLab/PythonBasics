@@ -25,7 +25,7 @@
 ### Day02: 演算子、制御構文
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_00Introduction.ipynb)
 * [資料01: 演算子](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_01Operator.ipynb)
-* [資料01: 制御構文](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_02Control.ipynb)
+* [資料02: 制御構文](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_02Control.ipynb)
 
 ### Day03: 関数とクラス
 

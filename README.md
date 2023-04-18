@@ -53,9 +53,3 @@
 ### Day8: 機械学習(NumPy)
 
 ### Day9: 機械学習(scikit-learn)
-
-* [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_00Introduction.ipynb)
-* [資料01: 文字列関数](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_01String.ipynb)
-* [資料02: 高度な文字列処理](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_02StringAdvance.ipynb)
-* [資料03: ラスター画像](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_03Raster.ipynb)
-* [資料04: ベクター画像](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_04Vector.ipynb)

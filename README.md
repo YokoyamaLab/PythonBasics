@@ -25,7 +25,7 @@
 
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_00Introduction.ipynb)
 * [資料01: データ構造](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_01DataStructure.ipynb)
-* [課題Q1: 複雑なデータ構造を作ってみよう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day01_q1DataStructure.ipynb)　※Google Classroomで配布/提出
+* [課題Q1: 複雑なデータ構造を作ってみよう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_q1DataStructure.ipynb)　※Google Classroomで配布/提出
 * [資料02: 演算子](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_02Operator.ipynb)
 * [資料03: 制御構文](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_03Control.ipynb)
 * [課題Q2: 複雑なデータ構造を走査してみよう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day02_q2FullScan.ipynb)　※Google Classroomで配布/提出

@@ -37,7 +37,7 @@
 * [資料01: 関数とラムダ式](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_01Function.ipynb)
 * [資料02: クラスとオブジェクト指向](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_02Class.ipynb)
 * [課題Q1: アバターを管理するクラスを設計しよう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_q1Class.ipynb)　※Google Classroomで配布/提出
-
+* [課題Q2: 高階関数とラムダ式　※提出は任意](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day03_q2Lambda.ipynb)　※Google Classroomで配布/提出
 ### Day4: グラフィックとクラス(応用)
 
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_00Introduction.ipynb)

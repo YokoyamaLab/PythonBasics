@@ -42,8 +42,9 @@
 
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_00Introduction.ipynb)
 * [資料01: Turtleで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_01Turtle.ipynb)
-* [課題Q1: 星を描こう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_q1Star.ipynb)　※Google Classroomで配布/提出
+* [課題Q1: 星を描こう ※提出は任意](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_q1Star.ipynb)　※Google Classroomで配布/提出
 * [資料02: PILで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_02Pil.ipynb)
+* [資料03: クラスの継承](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_03Inheritance.ipynb)
 * [課題Q2: 自分のアバターを描こう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_q2Avator.ipynb)　※Google Classroomで配布/提出
 
 ### Day5: 演習デー

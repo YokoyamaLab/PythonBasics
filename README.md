@@ -49,7 +49,7 @@
 
 ### Day5: 演習デー
 
-* [資料01: 参考資料](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_01_example.ipynb)
+* [資料01: 参考資料](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_01Example.ipynb)
 
 ### Day6: 文字列処理とWeb
 

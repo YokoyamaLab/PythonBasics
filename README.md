@@ -54,9 +54,13 @@
 * [資料03: 参考資料 (顔(image)の書き換え方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_03Redraw.ipynb)
 
 ### Day6: 発表会と数値処理の基礎
+* 発表会
+* 講義後半の概要
+* [資料01: Google Formsデータ読みこみと分析]
+### Day7: 数値処理とグラフ(教科書Chapter2とPandas,NumPy,Matplotlib)
 
-### Day7: 数値処理とグラフ
+### Day8: 機械学習の理解と実践(教科書Chapter3～4)
 
-### Day8: 機械学習(NumPy)
+### Day9: 演習デー（教科書Chapter5）
 
-### Day9: 機械学習(scikit-learn)
+### 最終課題（レポート）

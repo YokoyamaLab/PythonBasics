@@ -50,13 +50,16 @@
 ### Day5: 演習デー
 
 * [資料01: 参考資料 (みんなで実装した顔パーツクラスの呼び出し方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_01Example.ipynb)
-* [資料02: 参考資料 (ドロップダウンメニューの使い方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_02Dropdowns.ipynb)
+* [資料02: 参考資料 (ドロップダウンメニューの使い方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_02Dropdowns.ipynb)　
 * [資料03: 参考資料 (顔(image)の書き換え方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_03Redraw.ipynb)
 
 ### Day6: 発表会と数値処理の基礎
-* 発表会
-* 講義後半の概要
-* [資料01: Google Formsデータ読みこみと分析]
+* 【前半】発表会
+* 【後半】教科書の俯瞰と後半講義の準備
+* [資料01: Google Formsデータ読みこみと分析](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day06_01Plot_from_gdrive.ipynb)
+* [課題Q1: 教科書第二章の自習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day06_q1Chapter2.ipynb)　※Google Classroomで配布/提出
+* [課題Q2: 画像の読み込み・リサイズ・保存　※提出は任意](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day06_q2Resize_images.ipynb)　※Google Classroomで配布/提出
+ 
 ### Day7: 数値処理とグラフ(教科書Chapter2とPandas,NumPy,Matplotlib)
 
 ### Day8: 機械学習の理解と実践(教科書Chapter3～4)

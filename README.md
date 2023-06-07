@@ -60,10 +60,14 @@
 * [課題Q1: 教科書第二章の自習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day06_q1Chapter2.ipynb)　※Google Classroomで配布/提出
 * [課題Q2: 画像の読み込み・リサイズ・保存　※提出は任意](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day06_q2Resize_images.ipynb)　※Google Classroomで配布/提出
  
-### Day7: 数値処理とグラフ(教科書Chapter2とPandas,NumPy,Matplotlib)
+### Day7: 数値処理と機械学習のお作法
+* [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_00Introduction.ipynb)
+* [資料01: NumPy 16本ノック](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_01NumPy.ipynb)
+* [資料02: Pandas 16本ノック](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_02Pandas.ipynb)
+* [課題01: 教科書第三章の学習] ※Google Classroomより配布し、後期中にやります(できるところまで)
 
-### Day8: 機械学習の理解と実践(教科書Chapter3～4)
+### Day8: 機械学習で画像認識
 
-### Day9: 演習デー（教科書Chapter5）
+### Day9: 機械学習の様々なアルゴリズム
 
 ### 最終課題（レポート）

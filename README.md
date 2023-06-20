@@ -64,10 +64,16 @@
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_00Introduction.ipynb)
 * [資料01: NumPy 16本ノック](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_01NumPy.ipynb)
 * [資料02: Pandas 16本ノック](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_02Pandas.ipynb)
-* [課題01: 教科書第三章の学習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_q1Chapter3.ipynb) ※Google Classroomより配布し、後期中にやります(できるところまで)
+* [課題Q1: 教科書第三章の学習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_q1Chapter3.ipynb) ※Google Classroomより配布し、講義中にやります(できるところまで)
 
 ### Day8: 機械学習で画像認識
-
+* [課題Q1: 教科書第三章の学習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day08_q1DigitRecognition.ipynb) ※Google Classroomより配布し、講義終了時までに終わらせます。
+  
 ### Day9: 機械学習の様々なアルゴリズム
-
+* 資料01: ロジスティック回帰
+* 資料02: SVM (サポートベクターマシン)
+* 資料03: 決定木
+* 資料04: ランダムフォレスト
+* 資料05: k-NN
+* 資料06: k-means
 ### 最終課題（レポート）

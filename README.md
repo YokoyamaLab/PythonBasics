@@ -70,10 +70,12 @@
 * [課題Q1: 教科書第三章の学習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day08_q1DigitRecognition.ipynb) ※Google Classroomより配布し、講義終了時までに終わらせます。
   
 ### Day9: 機械学習の様々なアルゴリズム
-* 資料01: ロジスティック回帰
-* 資料02: SVM (サポートベクターマシン)
-* 資料03: 決定木
-* 資料04: ランダムフォレスト
-* 資料05: k-NN
-* 資料06: k-means
+* [資料01: ロジスティック回帰](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day09_01LogistiRregression.ipynb)
+* [資料02: SVM (サポートベクターマシン)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day09_02SVM_pynb.ipynb)
+* [資料03: 決定木](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day09_03DecisionTree.ipynb)
+* [資料04: ランダムフォレスト](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day09_04RandomForest.ipynb)
+* [資料05: k-NN](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day09_05kNN.ipynb)
+* [資料06: k-means](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day09_06kMeans.ipynb)
+* [資料07: Web上のCSVファイルからデータを読み込む](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day09_07CSVFile.ipynb)
+  
 ### 最終課題（レポート）

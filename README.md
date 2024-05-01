@@ -37,7 +37,7 @@
 * [資料00: イントロダクション](day03_00Introduction.ipynb)
 * [資料01: 関数とラムダ式](day03_01Function.ipynb)
 * [資料02: クラスとオブジェクト指向](day03_02Class.ipynb)
-* [課題Q1: アバターを管理するクラスを設計しよう](day03_q1Class.ipynb)　※Google Classroomで配布/提出
+* [課題Q1: 大学生クラスの設計](day03_q1Class.ipynb)　※Google Classroomで配布/提出
 * [課題Q2: 高階関数とラムダ式　※提出は任意](day03_q2Lambda.ipynb)　※Google Classroomで配布/提出
 ### Day4: グラフィックとクラス(応用)
 

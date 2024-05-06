@@ -41,12 +41,12 @@
 * [課題Q2: 高階関数とラムダ式　※提出は任意](day03_q2Lambda.ipynb)　※Google Classroomで配布/提出
 ### Day4: グラフィックとクラス(応用)
 
-* [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_00Introduction.ipynb)
-* [資料01: Turtleで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_01Turtle.ipynb)
-* [課題Q1: 星を描こう ※提出は任意](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_q1Star.ipynb)　※Google Classroomで配布/提出
-* [資料02: PILで描く](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_02Pil.ipynb)
-* [資料03: クラスの継承](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_03Inheritance.ipynb)
-* [課題Q2: アバターに使う顔のパーツを描こう](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day04_q2FaceComponents.ipynb)　※Google Classroomで配布/提出
+* [資料00: イントロダクション](day04_00Introduction.ipynb)
+* [資料01: Turtleで描く](day04_01Turtle.ipynb)
+* [課題Q1: 星を描こう ※提出は任意](day04_q1Star.ipynb)　※Google Classroomで配布/提出
+* [資料02: PILで描く](day04_02Pil.ipynb)
+* [資料03: クラスの継承](day04_03Inheritance.ipynb)
+* [課題Q2: アバターに使う顔のパーツを描こう](day04_q2FaceComponents.ipynb)　※Google Classroomで配布/提出
 
 ### Day5: 演習デー
 

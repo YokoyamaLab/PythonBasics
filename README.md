@@ -46,7 +46,8 @@
 * [課題Q1: 星を描こう ※提出は任意](day04_q1Star.ipynb)　※Google Classroomで配布/提出
 * [資料02: PILで描く](day04_02Pil.ipynb)
 * [資料03: クラスの継承](day04_03Inheritance.ipynb)
-* [課題Q2: アバターに使う顔のパーツを描こう](day04_q2FaceComponents.ipynb)　※Google Classroomで配布/提出
+* [課題Q2解説: 似顔絵を描こう](day04_q2FaceComponents_explanation.ipynb) ※先にこちらを読む
+* [課題Q2: 似顔絵を描こう](day04_q2FaceComponents.ipynb)　※Google Classroomで配布/提出
 
 ### Day5: 演習デー
 

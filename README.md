@@ -51,9 +51,9 @@
 
 ### Day5: 演習デー
 
-* [資料01: 参考資料 (みんなで実装した顔パーツクラスの呼び出し方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_01Example.ipynb)
-* [資料02: 参考資料 (ドロップダウンメニューの使い方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_02Dropdowns.ipynb)　
-* [資料03: 参考資料 (顔(image)の書き換え方)](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day05_03Redraw.ipynb)
+* [資料01: 参考資料 (みんなで実装した顔パーツクラスの呼び出し方)](day05_01Example.ipynb)
+* [資料02: 参考資料 (ドロップダウンメニューの使い方)](day05_02Dropdowns.ipynb)　
+* [資料03: 参考資料 (顔(image)の書き換え方)](day05_03Redraw.ipynb)
 
 ### Day6: 発表会と数値処理の基礎
 * 【前半】発表会

@@ -59,13 +59,13 @@
 ### Day6: 発表会と数値処理の基礎
 * 【前半】発表会
 * 【後半】教科書の俯瞰と後半講義の準備
-* [資料01: Google Formsデータ読みこみと分析](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day06_01Plot_from_gdrive.ipynb)
-* [課題Q1: 教科書第二章の自習](day06_q1Chapter2.ipynb)　※Google Classroomで配布/提出
+* [予習P1: NumPy 16本ノック](day06_p1NumPy.ipynb)
+* [課題Q2: 教科書第二章の自習](day06_q1Chapter2.ipynb)　※Google Classroomで配布/提出
 
  
 ### Day7: 数値処理と機械学習のお作法
 * [資料00: イントロダクション](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_00Introduction.ipynb)
-* [資料01: NumPy 16本ノック](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_01NumPy.ipynb)
+
 * [資料02: Pandas 16本ノック](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_02Pandas.ipynb)
 * [課題Q1: 教科書第三章の学習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day07_q1Chapter3.ipynb) ※Google Classroomより配布し、講義中にやります(できるところまで)
 

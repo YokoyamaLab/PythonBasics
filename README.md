@@ -65,9 +65,10 @@
  
 ### Day7: 数値処理と機械学習のお作法
 * [資料00: イントロダクション](day07_00Introduction.ipynb)
-* [課題１: NumPyでプログラムを組む](day07_q1NumPy.ipynb)
+* [課題Q1: NumPyでプログラムを組む](day07_q1NumPy.ipynb)
 * [資料02: Pandas 16本ノック](day07_02Pandas.ipynb)
-* [課題Q1: 教科書第三章の学習](day07_q2Chapter3.ipynb) ※Google Classroomより配布し、講義中にやります(できるところまで)
+* [課題Q2: 教科書第三章の学習](day07_q2Chapter3.ipynb) ※Google Classroomより配布し、講義中にやります(できるところまで)
+* [課題Q3: 数字画像の作成](day07_q3CreateImage.ipynb) ※Google Classroomより配布。
 
 ### Day8: 機械学習で画像認識
 * [課題Q1: 教科書第三章の学習](https://colab.research.google.com/github/YokoyamaLab/PythonBasics/blob/main/day08_q1DigitRecognition.ipynb) ※Google Classroomより配布し、講義終了時までに終わらせます。

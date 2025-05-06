@@ -3,7 +3,6 @@ import math
 import numpy as np
 from scipy.interpolate import interp1d
 
-
 class SelfPortrait:
     """似顔絵描画の為のベースクラス: SelfPortrait
     
@@ -63,8 +62,8 @@ class SelfPortrait:
     def draw(self):
         """似顔絵を描画する
         
-        顔パーツ描画が次の順番で行われます。後ろ髪(drawBackHair)→顔輪郭(drawFace)→目(drawEys)→鼻(drawNose)
-        →口(drawMouth)→耳(drawEars)→前髪(drawHair)→名前(drawName)
+        顔パーツ描画が次の順番で行われます。後ろ髪(drawBackHair)→顔輪郭(drawFace)→目(drawEys)
+        →鼻(drawNose)→口(drawMouth)→耳(drawEars)→前髪(drawHair)→名前(drawName)
         
         このクラスを継承し必要なパーツ描画メソッドをオーバーライドする事で顔・表情を変えられます。
         
@@ -84,6 +83,13 @@ class SelfPortrait:
         return self.image
 
     def drawBackHair(self):
+        """後ろ髪の描画
+        
+        Note:
+            後ろ髪を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            なお、後ろ髪(drawBackHair)は顔輪郭の下に描画され、前髪(drawHair)は上に描画される
+            髪の色はコンストラクタ引数のHairColorで指定可
+        """
         center = self._centerXY()
         
         #仮にXYともに0～1の座標として描く
@@ -117,6 +123,12 @@ class SelfPortrait:
         self.canvas.polygon(hair, fill=self.hairColor)
 
     def drawFace(self):
+        """顔輪郭の描画
+        
+        Note:
+            顔輪郭を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            顔の色はコンストラクタ引数のfaceColorで指定可
+        """
         center = self._centerXY()
         upper_left = (center[0]-self.diameter/2, center[1]-self.diameter/2)
         lower_right = (center[0]+self.diameter/2,
@@ -124,6 +136,12 @@ class SelfPortrait:
         self.canvas.ellipse([upper_left, lower_right], fill=self.skinColor)
 
     def drawEyes(self):
+        """目の描画
+        
+        Note:
+            目を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            目の色はコンストラクタ引数のeyeColorで指定可
+        """
         center = self._centerXY()
         eye_x_offset = self.diameter * 0.2
         eye_y_offset = self.diameter * 0.1
@@ -142,6 +160,12 @@ class SelfPortrait:
                              fill=(self.eyeColor), width=3)
 
     def drawNose(self):
+        """鼻の描画
+        
+        Note:
+            鼻を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            鼻輪郭の色はコンストラクタ引数のnoseColorで指定可
+        """
         center = self._centerXY()
         offsetY = self.diameter * 0.2
         self.canvas.line(
@@ -152,6 +176,12 @@ class SelfPortrait:
         )
 
     def drawMouth(self):
+        """唇の描画
+        
+        Note:
+            唇を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            唇の色はコンストラクタ引数のlipColorで指定可
+        """
         center = self._centerXY()
         lipCenter = (center[0], center[1]-self.diameter * 0.3)
         lipWidth = self.diameter * 0.5
@@ -167,6 +197,12 @@ class SelfPortrait:
         )
 
     def drawEars(self):
+        """耳の描画
+        
+        Note:
+            耳を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            耳はコンストラクタ引数のfaceColorで指定可
+        """
         center = self._centerXY()
         ear_x_offset = self.diameter * 0.2
         ear_y_offset = self.diameter * 0.1
@@ -180,6 +216,13 @@ class SelfPortrait:
                 [(x - r, y - r), (x + r, y + r)], fill=self.skinColor)
 
     def drawHair(self):
+        """前髪の描画
+        
+        Note:
+            前髪を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            なお、後ろ髪(drawBackHair)は顔輪郭の下に描画され、前髪(drawHair)は上に描画される
+            髪の色はコンストラクタ引数のHairColorで指定可
+        """
         center = self._centerXY()
         front_hair_diameter = self.diameter * 1.1
         front_hair_upper_left = (
@@ -190,6 +233,13 @@ class SelfPortrait:
             [front_hair_upper_left, front_hair_lower_right], start=180, end=360, fill=(self.hairColor))
         
     def drawName(self):
+        """名前の描画
+        
+        Note:
+            似顔絵の下に名前が表示される
+            名前を独自のデザインにしたい場合はこのメソッドをオーバーライドする
+            名前の色はコンストラクタ引数のnameColorで指定可
+        """
         center = self._centerXY()
         offsetY = self.diameter * 0.75
         text_size = 20

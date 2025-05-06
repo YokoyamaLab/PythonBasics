@@ -3,18 +3,19 @@ import math
 import numpy as np
 from scipy.interpolate import interp1d
 
+
 class SelfPortrait:
     """似顔絵描画の為のベースクラス: SelfPortrait
-    
+
     津田塾大学学芸学部情報科学科の講義『情報科学C』のオブジェクト指向の学習で
     利用する似顔絵描画のためのベースクラス。
-    
+
     Examples:
         pipでインストール後、以下のコードでデフォルトの似顔絵のPIL.Imageが取得できる
         >>> from self_portrait import SelfPortrait
         >>> umekoPortrait = SelfPortrait(name="Umeko Tsuda",nameColor=(255,0,0))
         >>> image = umekoPortrait.draw()
-     
+
     Attributes:
         width (int): キャンバスの幅 [Default: 400]
         height (int): キャンバスの高さ [Default: 400]
@@ -32,11 +33,11 @@ class SelfPortrait:
                  eyeColor=(12, 12, 45),
                  noseColor=(0, 0, 0),
                  backgroundColor=(236, 239, 241),
-                 nameColor=(0,0,0)):
+                 nameColor=(0, 0, 0)):
         """SelfPortraitコンストラクタ
-        
+
         nameは必須、他はオプション。似顔絵各所の色をコンストラクタへ渡す事でデフォルトから変更可能
-        
+
         Args:
             name (string): タイトル(氏名)
             skinColor (Tuple of (R,G,B), optional): 肌色
@@ -61,12 +62,12 @@ class SelfPortrait:
 
     def draw(self):
         """似顔絵を描画する
-        
+
         顔パーツ描画が次の順番で行われます。後ろ髪(drawBackHair)→顔輪郭(drawFace)→目(drawEys)
         →鼻(drawNose)→口(drawMouth)→耳(drawEars)→前髪(drawHair)→名前(drawName)
-        
+
         このクラスを継承し必要なパーツ描画メソッドをオーバーライドする事で顔・表情を変えられます。
-        
+
         Args:
 
         Returns:
@@ -84,47 +85,47 @@ class SelfPortrait:
 
     def drawBackHair(self):
         """後ろ髪の描画
-        
+
         Note:
             後ろ髪を独自のデザインにしたい場合はこのメソッドをオーバーライドする
             なお、後ろ髪(drawBackHair)は顔輪郭の下に描画され、前髪(drawHair)は上に描画される
             髪の色はコンストラクタ引数のHairColorで指定可
         """
         center = self._centerXY()
-        
-        #仮にXYともに0～1の座標として描く
-        #まずは右髪の輪郭
+
+        # 仮にXYともに0～1の座標として描く
+        # まずは右髪の輪郭
         hair_right = [
-            (0,0),(0,0.1),(0,0.2),(0,0.4),(-0.05,0.8),(-0.1,1)
+            (0, 0), (0, 0.1), (0, 0.2), (0, 0.4), (-0.05, 0.8), (-0.1, 1)
         ]
-        #左髪の輪郭は右髪の輪郭をX=0.5で鏡像化して得る
-        hair_left = self._mirrorX(hair_right,0.5)
-        
-        #キャンパス上の絶対座標に直すためにキャンバス上での幅・高さ・髪の毛領域の左上のXY座標を作る
+        # 左髪の輪郭は右髪の輪郭をX=0.5で鏡像化して得る
+        hair_left = self._mirrorX(hair_right, 0.5)
+
+        # キャンパス上の絶対座標に直すためにキャンバス上での幅・高さ・髪の毛領域の左上のXY座標を作る
         hair_width = self.diameter * 1.1
-        hair_height = self.diameter * 0.5  
+        hair_height = self.diameter * 0.5
         hair_offset_x = center[0] - hair_width/2
         hair_offset_y = center[1]
-        
-        #0～1の相対座標をキャンバスの絶対座標に換算する
+
+        # 0～1の相対座標をキャンバスの絶対座標に換算する
         hair_right = (lambda hair_coords, width, height, offset_x, offset_y: [
             (x * width + offset_x, y * height + offset_y) for x, y in hair_coords
         ])(hair_right, hair_width, hair_height, hair_offset_x, hair_offset_y)
-        
+
         hair_left = (lambda hair_coords, width, height, offset_x, offset_y: [
             (x * width + offset_x, y * height + offset_y) for x, y in hair_coords
         ])(hair_left, hair_width, hair_height, hair_offset_x, hair_offset_y)
-        
-        #左髪の座標リストを反転
+
+        # 左髪の座標リストを反転
         hair_left.reverse()
-        #右髪・左髪、それぞれ座標間をスプライン曲線で結んだものを、右と左で結合
+        # 右髪・左髪、それぞれ座標間をスプライン曲線で結んだものを、右と左で結合
         hair = self._makeSpline(hair_right) + self._makeSpline(hair_left)
-        #ポリゴンとして描画
+        # ポリゴンとして描画
         self.canvas.polygon(hair, fill=self.hairColor)
 
     def drawFace(self):
         """顔輪郭の描画
-        
+
         Note:
             顔輪郭を独自のデザインにしたい場合はこのメソッドをオーバーライドする
             顔の色はコンストラクタ引数のfaceColorで指定可
@@ -137,7 +138,7 @@ class SelfPortrait:
 
     def drawEyes(self):
         """目の描画
-        
+
         Note:
             目を独自のデザインにしたい場合はこのメソッドをオーバーライドする
             目の色はコンストラクタ引数のeyeColorで指定可
@@ -161,7 +162,7 @@ class SelfPortrait:
 
     def drawNose(self):
         """鼻の描画
-        
+
         Note:
             鼻を独自のデザインにしたい場合はこのメソッドをオーバーライドする
             鼻輪郭の色はコンストラクタ引数のnoseColorで指定可
@@ -170,14 +171,14 @@ class SelfPortrait:
         offsetY = self.diameter * 0.2
         self.canvas.line(
             [(center[0]+5, center[1]+offsetY-10), (center[0]-5,
-                                                       center[1]+offsetY), (center[0]+5, center[1]+offsetY+10)],
+                                                   center[1]+offsetY), (center[0]+5, center[1]+offsetY+10)],
             fill=self.noseColor,
             width=2
         )
 
     def drawMouth(self):
         """唇の描画
-        
+
         Note:
             唇を独自のデザインにしたい場合はこのメソッドをオーバーライドする
             唇の色はコンストラクタ引数のlipColorで指定可
@@ -198,7 +199,7 @@ class SelfPortrait:
 
     def drawEars(self):
         """耳の描画
-        
+
         Note:
             耳を独自のデザインにしたい場合はこのメソッドをオーバーライドする
             耳はコンストラクタ引数のfaceColorで指定可
@@ -217,7 +218,7 @@ class SelfPortrait:
 
     def drawHair(self):
         """前髪の描画
-        
+
         Note:
             前髪を独自のデザインにしたい場合はこのメソッドをオーバーライドする
             なお、後ろ髪(drawBackHair)は顔輪郭の下に描画され、前髪(drawHair)は上に描画される
@@ -231,10 +232,10 @@ class SelfPortrait:
             center[0] + front_hair_diameter / 2, center[1] + front_hair_diameter / 2)
         self.canvas.pieslice(
             [front_hair_upper_left, front_hair_lower_right], start=180, end=360, fill=(self.hairColor))
-        
+
     def drawName(self):
         """名前の描画
-        
+
         Note:
             似顔絵の下に名前が表示される
             名前を独自のデザインにしたい場合はこのメソッドをオーバーライドする
@@ -243,8 +244,8 @@ class SelfPortrait:
         center = self._centerXY()
         offsetY = self.diameter * 0.75
         text_size = 20
-        font = ImageFont.load_default(size=text_size)         
-        text_width = self.canvas.textlength(self.name,font=font)
+        font = ImageFont.load_default(size=text_size)
+        text_width = self.canvas.textlength(self.name, font=font)
         text_height = text_size
 
         # 中央揃えの座標を計算
@@ -264,8 +265,8 @@ class SelfPortrait:
             キャンバス中央の座標。[x座標,y座標]
         """
         return (SelfPortrait.width * 0.5, SelfPortrait.height*0.5)
-    
-    def _mirrorX(self,coordinates, mirror_x = 0):
+
+    def _mirrorX(self, coordinates, mirror_x=0):
         """座標のリストを指定したX座標を軸に鏡像にする関数。
 
         Args:
@@ -280,7 +281,7 @@ class SelfPortrait:
             mirrored_x = 2 * mirror_x - x
             mirrored_coords.append((mirrored_x, y))
         return mirrored_coords
-    
+
     def _makeSpline(self, coordinates, num_points=300):
         """座標のリストをスプライン曲線で滑らかに補間する関数。
 

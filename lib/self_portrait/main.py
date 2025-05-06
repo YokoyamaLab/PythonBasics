@@ -5,6 +5,22 @@ from scipy.interpolate import interp1d
 
 
 class SelfPortrait:
+    """似顔絵描画の為のベースクラス: SelfPortrait
+    
+    津田塾大学学芸学部情報科学科の講義『情報科学C』のオブジェクト指向の学習で
+    利用する似顔絵描画のためのベースクラス。
+    
+    Examples:
+        pipでインストール後、以下のコードでデフォルトの似顔絵のPIL.Imageが取得できる
+        >>> from self_portrait import SelfPortrait
+        >>> umekoPortrait = SelfPortrait(name="Umeko Tsuda",nameColor=(255,0,0))
+        >>> image = umekoPortrait.draw()
+     
+    Attributes:
+        width (int): キャンバスの幅 [Default: 400]
+        height (int): キャンバスの高さ [Default: 400]
+        diameter (int): キャンバス中央に描く顔の直径の目安 [Default: 200]
+    """
     width = 400
     height = 400
     diameter = 200
@@ -18,6 +34,20 @@ class SelfPortrait:
                  noseColor=(0, 0, 0),
                  backgroundColor=(236, 239, 241),
                  nameColor=(0,0,0)):
+        """SelfPortraitコンストラクタ
+        
+        nameは必須、他はオプション。似顔絵各所の色をコンストラクタへ渡す事でデフォルトから変更可能
+        
+        Args:
+            name (string): タイトル(氏名)
+            skinColor (Tuple of (R,G,B), optional): 肌色
+            hairColor (Tuple of (R,G,B), optional): 髪色
+            lipColor (Tuple of (R,G,B), optional):  リップカラー
+            eyeColor (Tuple of (R,G,B), optional): 目の色
+            noseColor (Tuple of (R,G,B), optional): 鼻の色
+            backgroundColor (Tuple of (R,G,B), optional): 背景色
+            nameColor (Tuple of (R,G,B), optional): タイトル
+        """
         self.name = name
         self.skinColor = skinColor
         self.hairColor = hairColor
@@ -31,6 +61,18 @@ class SelfPortrait:
         self.canvas = ImageDraw.Draw(self.image)
 
     def draw(self):
+        """似顔絵を描画する
+        
+        顔パーツ描画が次の順番で行われます。後ろ髪(drawBackHair)→顔輪郭(drawFace)→目(drawEys)→鼻(drawNose)
+        →口(drawMouth)→耳(drawEars)→前髪(drawHair)→名前(drawName)
+        
+        このクラスを継承し必要なパーツ描画メソッドをオーバーライドする事で顔・表情を変えられます。
+        
+        Args:
+
+        Returns:
+            PIL Image
+        """
         self.drawBackHair()
         self.drawFace()
         self.drawEyes()
@@ -39,6 +81,7 @@ class SelfPortrait:
         self.drawEars()
         self.drawHair()
         self.drawName()
+        return self.image
 
     def drawBackHair(self):
         center = self._centerXY()
@@ -163,8 +206,7 @@ class SelfPortrait:
 
     # ここからは内部で使う関数(継承したクラスからも使えます) ###############################
     def _centerXY(self):
-        """
-        キャンバス中央の座標を返す関数。
+        """キャンバス中央の座標を返す関数。
 
         Args:
 
@@ -174,8 +216,7 @@ class SelfPortrait:
         return (SelfPortrait.width * 0.5, SelfPortrait.height*0.5)
     
     def _mirrorX(self,coordinates, mirror_x = 0):
-        """
-        座標のリストを指定したX座標を軸に鏡像にする関数。
+        """座標のリストを指定したX座標を軸に鏡像にする関数。
 
         Args:
             coordinates: 座標のリスト。[(x1, y1), (x2, y2), ..., (xn, yn)] の形式。
@@ -190,9 +231,8 @@ class SelfPortrait:
             mirrored_coords.append((mirrored_x, y))
         return mirrored_coords
     
-    def _makeSpline(self, coordinates, num_points=800):
-        """
-        座標のリストをスプライン曲線で滑らかに補間する関数。
+    def _makeSpline(self, coordinates, num_points=300):
+        """座標のリストをスプライン曲線で滑らかに補間する関数。
 
         Args:
             coordinates: 座標のリスト。[(x1, y1), (x2, y2), ..., (xn, yn)] の形式。

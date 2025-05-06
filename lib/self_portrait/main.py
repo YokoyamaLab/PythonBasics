@@ -15,6 +15,9 @@ class SelfPortrait:
         >>> from self_portrait import SelfPortrait
         >>> umekoPortrait = SelfPortrait(name="Umeko Tsuda",nameColor=(255,0,0))
         >>> image = umekoPortrait.draw()
+        
+        座標確認(デバッグ)のために方眼を重ねる事もできる
+        >>> image = umekoPortrait.draw(debug=True)
 
     Attributes:
         width (int): キャンバスの幅 [Default: 400]
@@ -60,7 +63,7 @@ class SelfPortrait:
                                         SelfPortrait.height), self.backgroundColor)
         self.canvas = ImageDraw.Draw(self.image)
 
-    def draw(self):
+    def draw(self,debug=False):
         """似顔絵を描画する
 
         顔パーツ描画が次の順番で行われます。後ろ髪(drawBackHair)→顔輪郭(drawFace)→目(drawEys)
@@ -69,7 +72,8 @@ class SelfPortrait:
         このクラスを継承し必要なパーツ描画メソッドをオーバーライドする事で顔・表情を変えられます。
 
         Args:
-
+            debug (int, optional): 座標の把握の為にグリッドを最上面に重ねるかどうか [Default: False]
+            
         Returns:
             PIL Image
         """
@@ -81,8 +85,32 @@ class SelfPortrait:
         self.drawEars()
         self.drawHair()
         self.drawName()
+        if debug != False:
+            self.drawGrid()
         return self.image
-
+    
+    def drawGrid(self,interval=[(100,(255,0,0,60)),(50,(0,0,255,60)),(10,(100,100,100,50))]):
+        """座標確認用方眼の表示
+        
+        Args:
+            interval (List of (interval, (R,G,B,A))): 方眼の間隔と色、間隔が大きい方から指定する。
+        
+        Note:
+            顔のパーツを描く際に座標を確認するための方眼を表示する
+            デフォルトでは5ピクセル毎にラインが引かれ、50ピクセル、100ピクセル毎は色のついた線となる
+            interval引数で間隔と色は設定可能
+        """
+        for y in range(self.height):
+            for i in interval:
+                if y % i[0] == 0:
+                    self.canvas.line(((0,y),(self.width,y)),i[1],1)
+                    break
+        for x in range(self.width):
+            for i in interval:
+                if x % i[0] == 0:
+                    self.canvas.line(((x,0),(x,self.height)),i[1],1)
+                    break
+                
     def drawBackHair(self):
         """後ろ髪の描画
 

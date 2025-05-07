@@ -272,7 +272,10 @@ class SelfPortrait:
         center = self._centerXY()
         offsetY = self.diameter * 0.75
         text_size = 20
-        font = ImageFont.load_default(size=text_size)
+        if 'cjk_font_path' in globals():
+            font = ImageFont.truetype(cjk_font_path, text_size)
+        else:
+            font = ImageFont.load_default(size=text_size)
         text_width = self.canvas.textlength(self.name, font=font)
         text_height = text_size
 
